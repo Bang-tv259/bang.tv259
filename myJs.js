@@ -16,10 +16,10 @@ function firstQuestion(){
     Swal.fire({
         title: 'Xin thông báo!',
         text: 'Chào ban, chúng tôi xin gửi cho bạn thông tin như sau:::',
-        imageUrl: 'img/start.jpg',
+        imageUrl: 'start.jpg',
         imageWidth: 300,
         imageHeight: 300,
-        background: '#fff url("img/iput-bg.jpg")',
+        background: '#fff url("iput-bg.jpg")',
         imageAlt: 'Custom image',
       }).then(function(){
         $('.content').show(200);
@@ -28,7 +28,7 @@ function firstQuestion(){
 
  // switch button position
  function switchButton() {
-    var audio = new Audio('sound/duck.mp3');
+    var audio = new Audio('duck.mp3');
     audio.play();
     var leftNo = $('#no').css("left");
     var topNO = $('#no').css("top");
@@ -41,7 +41,7 @@ function firstQuestion(){
 }
 // move random button póition
 function moveButton() {
-    var audio = new Audio('sound/Swish1.mp3');
+    var audio = new Audio('Swish1.mp3');
     audio.play();
     if (screen.width<=600) {
         var x = Math.random() * 300;
@@ -93,7 +93,7 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
-    var audio = new Audio('sound/tick.mp3');
+    var audio = new Audio('tick.mp3');
     audio.play();
     Swal.fire({
         title: 'Vui lòng phát biểu cảm nghĩ của bạn sau khi nhận phần quà này từ NhanTrucTiepBank :vvvv',
@@ -101,7 +101,7 @@ $('#yes').click(function() {
         width: 900,
         padding: '3em',
         html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
-        background: '#fff url("img/iput-bg.jpg")',
+        background: '#fff url("iput-bg.jpg")',
         backdrop: `
               rgba(0,0,123,0.4)
               url("img/giphy2.gif")
@@ -120,7 +120,7 @@ $('#yes').click(function() {
             Swal.fire({
                 width: 900,
                 confirmButtonText: 'Okiiiii lun <3',
-                background: '#fff url("img/iput-bg.jpg")',
+                background: '#fff url("iput-bg.jpg")',
                 title: 'Thành công ^^ Cảm ơn bạn đã sử dụng dịch vụ',
                 text: "Hi vọng bạn sẽ vui vẻ tiếp tục sử dụng dịch vụ của chúng tôi :v Nếu cần hỗ trợ vui lòng ib với tư vấn viên",
                 confirmButtonColor: '#83d0c9',
